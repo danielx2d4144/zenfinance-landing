@@ -1,0 +1,60 @@
+import React, { useState } from 'react';
+import Logo from './Logo';
+
+const FooterCTA: React.FC = () => {
+  const [email, setEmail] = useState('');
+
+  return (
+    <section className="w-full bg-[#111111] border-b border-white/10">
+      <div className="flex w-full min-h-[220px]">
+        {/* Left Column: Logo */}
+        <div className="w-1/4 flex items-center px-12 border-r border-white/10">
+          <Logo />
+        </div>
+
+        {/* Middle Column: Subscription Input */}
+        <div className="flex-1 flex flex-col justify-center px-12 border-r border-white/10 py-12">
+          <h3 className="text-3xl font-medium mono-font mb-8 text-white">
+            Subscribe to be in touch*
+          </h3>
+          <div className="relative w-full max-w-xl">
+            <input
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Your e-mail"
+              className="w-full bg-transparent border-b border-white/30 pb-4 outline-none mono-font text-lg focus:border-white transition-colors placeholder:text-white/30 text-white"
+            />
+          </div>
+        </div>
+
+        {/* Right Column: Action Button & Disclaimer */}
+        <div className="w-1/4 flex flex-col justify-between p-12">
+          <div className="text-right">
+            <p className="text-[10px] text-white/40 font-bold tracking-[0.2em] mono-font uppercase">
+              *Only valuable resources
+            </p>
+          </div>
+          
+          <div className="flex justify-end">
+            <button className="relative bg-[#35CB87] text-black hover:text-white group transition-colors duration-300">
+              {/* Custom shape using clip-path for the "cut-off" corner look */}
+              <div 
+                className="px-12 py-4 font-bold uppercase tracking-[0.2em] mono-font text-sm flex items-center justify-center transition-transform active:scale-95"
+                style={{
+                  clipPath: 'polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%)'
+                }}
+              >
+                SUBSCRIBE
+              </div>
+              {/* Hover highlight overlay */}
+              <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity"></div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default FooterCTA;
