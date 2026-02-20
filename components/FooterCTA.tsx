@@ -37,12 +37,12 @@ const FooterCTA: React.FC = () => {
           </div>
           
           <div className="flex justify-end">
-            <button className="relative bg-[#35CB87] text-black hover:text-white group transition-colors duration-300">
+            <button className="relative bg-[#35CB87] text-black hover:text-white group transition-colors duration-300 rounded-md">
               {/* Custom shape using clip-path for the "cut-off" corner look */}
               <div 
                 className="px-12 py-4 font-bold uppercase tracking-[0.2em] mono-font text-sm flex items-center justify-center transition-transform active:scale-95"
                 style={{
-                  clipPath: 'polygon(0% 0%, 100% 0%, 100% 70%, 92% 100%, 0% 100%)'
+                  clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
                 }}
               >
                 SUBSCRIBE

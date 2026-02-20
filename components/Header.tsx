@@ -40,7 +40,7 @@ const Header: React.FC = () => {
             <span>Ecosystem</span>
           </div>
         </button>
-        <Button variant="primary">Apply Now</Button>
+        <Button variant="primary">LAUNCH APP</Button>
       </div>
     </header>
   );

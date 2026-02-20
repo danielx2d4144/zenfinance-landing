@@ -7,7 +7,6 @@ import FAQSection from './components/FAQSection';
 import Partners from './components/Partners';
 import FooterCTA from './components/FooterCTA';
 import Footer from './components/Footer';
-import AIAnalyzer from './components/AIAnalyzer';
 
 const App: React.FC = () => {
   return (
@@ -22,9 +21,6 @@ const App: React.FC = () => {
           
           {/* 2. Partners Carousel */}
           <Partners />
-
-          {/* 2.5 AI Incubation Section */}
-          <AIAnalyzer />
           
           {/* 3. Features Section (Beyond Capital deep-dive) */}
           <BeyondHero />

@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <h4 className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mono-font mb-8">Quick Links</h4>
           <ul className="space-y-4">
             <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Home</a></li>
-            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Apply Now</a></li>
+            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">LAUNCH APP</a></li>
             <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Help Center</a></li>
           </ul>
         </div>

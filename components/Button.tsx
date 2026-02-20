@@ -14,9 +14,9 @@ const Button: React.FC<ButtonProps> = ({ children, variant = 'primary', classNam
     return (
       <button 
         onClick={onClick} 
-        className={`${baseStyles} ${className} bg-[#35CB87] text-black overflow-visible`}
+        className={`${baseStyles} ${className} bg-[#35CB87] text-black overflow-visible rounded-md`}
         style={{
-          clipPath: 'polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%)',
+          clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)',
           minWidth: '120px'
         }}
       >

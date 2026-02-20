@@ -24,36 +24,62 @@ const BeyondHero: React.FC = () => {
 
       <div className="flex w-full min-h-[600px]">
         {/* Left Column: Sectors & Apply */}
-        <div className="w-[30%] p-12 flex flex-col justify-start">
-          <div className="flex items-start gap-2 mb-12">
-            <div className="w-1.5 h-1.5 bg-white mt-1.5"></div>
-            <div>
-              <h2 className="text-xl font-bold leading-tight mono-font text-white">Supercharging Web3<br />Builders</h2>
-            </div>
+        <div className="w-[30%] p-12 flex flex-col justify-start border-r border-white/10 relative">
+          {/* Subtle Grid Texture */}
+          <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
+               style={{ 
+                 backgroundImage: `linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)`,
+                 backgroundSize: '40px 40px' 
+               }}>
+          </div>
+          
+          <div className="flex items-start gap-4 mb-12 relative z-10">
+            <div className="w-2.5 h-2.5 bg-white mt-1.5 flex-shrink-0"></div>
+            <h2 className="text-2xl font-bold leading-tight mono-font text-white uppercase tracking-tight">
+              Supercharging Web3<br />Builders
+            </h2>
           </div>
 
-          <div className="flex flex-col gap-4 mb-12">
+          <div className="flex flex-col border-t border-white/10 mb-12">
             {[
-              { label: 'AI', checked: true },
-              { label: 'DeFi', checked: true },
-              { label: 'DePIN', checked: true },
-              { label: 'L1/L2', checked: true },
+              { label: 'CCIM' },
+              { label: 'DeFi' },
+              { label: 'CLCM' },
+              { label: 'L1/L2' },
             ].map((item, idx) => (
-              <div key={idx} className="relative group">
-                <div className="absolute inset-0 border border-white/5 rounded-md -rotate-1 group-hover:rotate-0 transition-transform"></div>
-                <div className="bg-black/40 backdrop-blur-sm border border-white/10 p-4 flex items-center gap-4 rounded-md relative z-10">
-                  <span className="text-[#35CB87]">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <div 
+                key={idx} 
+                className="relative h-20 flex items-center justify-center border-b border-white/10 group cursor-pointer hover:bg-white/5 transition-colors"
+              >
+                {/* Corner Brackets */}
+                <div className="absolute top-3 left-3 w-2 h-2 border-t border-l border-white/20 group-hover:border-white/40 transition-colors"></div>
+                <div className="absolute top-3 right-3 w-2 h-2 border-t border-r border-white/20 group-hover:border-white/40 transition-colors"></div>
+                <div className="absolute bottom-3 left-3 w-2 h-2 border-b border-l border-white/20 group-hover:border-white/40 transition-colors"></div>
+                <div className="absolute bottom-3 right-3 w-2 h-2 border-b border-r border-white/20 group-hover:border-white/40 transition-colors"></div>
+                
+                <div className="flex items-center gap-3">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" className="text-[#35CB87]">
+                    <path d="M6 12L10 16L14 8" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M11 12L15 16L19 8" stroke="currentColor" strokeWidth="3.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                  <span className="font-medium mono-font text-lg text-white">
+                    {item.label}
                   </span>
-                  <span className="font-bold mono-font text-sm uppercase tracking-widest text-white"> {item.label}</span>
                 </div>
               </div>
             ))}
           </div>
 
-          <button className="bg-[#35CB87] text-black px-8 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest hover:bg-[#2da971] transition-all w-fit shadow-lg shadow-[#35CB87]/20">
-            Apply For Funding
-          </button>
+          <div className="flex justify-center">
+            <button 
+              className="bg-[#35CB87] text-black px-10 py-3 font-bold uppercase text-[11px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#35CB87]/20 rounded-md"
+              style={{
+                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
+              }}
+            >
+              LAUNCH APP
+            </button>
+          </div>
         </div>
 
         {/* Center Column: Robot Capsule */}

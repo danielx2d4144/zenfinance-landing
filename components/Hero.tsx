@@ -81,8 +81,8 @@ const Hero: React.FC = () => {
               <span className="text-[#35CB87] text-xs font-bold uppercase tracking-[0.5em] mb-4 block mono-font text-center animate-pulse">
                 Elevating the future of crypto
               </span>
-              <h1 className="text-[130px] font-black uppercase tracking-tighter leading-[0.85] mono-font text-white text-center drop-shadow-2xl">
-                MAKING TO <span className="text-white/10">MORROW</span>
+              <h1 className="text-[100px] font-black uppercase tracking-tighter leading-[0.85] mono-font text-white text-center drop-shadow-2xl">
+                CROSS CHAIN <span className="text-white/10">LENDING</span>
               </h1>
             </div>
           </div>
@@ -119,10 +119,10 @@ const Hero: React.FC = () => {
               <Icons.Twitter />
             </a>
             <a href="#" className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              <Icons.Telegram />
             </a>
             <a href="#" className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+              <Icons.Discord />
             </a>
           </div>
         </div>
