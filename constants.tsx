@@ -16,7 +16,7 @@ export const PARTNERS = [
   { name: 'Chainlink', logo: 'https://cryptologos.cc/logos/chainlink-link-logo.svg?v=040' },
   { name: 'Ethereum', logo: 'https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=040' },
   { name: 'BNB', logo: 'https://cryptologos.cc/logos/bnb-bnb-logo.svg?v=040' },
-  { name: 'OKX', logo: 'https://cryptologos.cc/logos/okx-okb-logo.svg?v=040' },
+  { name: 'Base', logo: 'data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjAwIDIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8Y2lyY2xlIGN4PSIxMDAiIGN5PSIxMDAiIHI9IjEwMCIgZmlsbD0iIzAwNTJGRiIvPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTAwIDE1OS41QzEzMi44NjEgMTU5LjUgMTU5LjUgMTMyLjg2MSAxNTkuNSAxMDBDMTU5LjUgNjcuMTM5MSAxMzIuODYxIDQwLjUgMTAwIDQwLjVDNjcuMTM5MSA0MC41IDQwLjUgNjcuMTM5MSA0MC41IDEwMEM0MC41IDEzMi44NjEgNjcuMTM5MSAxNTkuNSAxMDAgMTU5LjVaTTEwMCAxMjguNUMxMTUuNzQgMTI4LjUgMTI4LjUgMTE1Ljc0IDEyOC41IDEwMEMxMjguNSA4NC4yNTk5IDExNS43NCA3MS41IDEwMCA3MS41Qzg0LjI1OTkgNzEuNSA3MS41IDg0LjI1OTkgNzEuNSAxMDBDNzEuNSAxMTUuNzQgODQuMjU5OSAxMjguNSAxMDAgMTI4LjVaIiBmaWxsPSJ3aGl0ZSIvPgo8L3N2Zz4=' },
 ];
 
 export const Icons = {
