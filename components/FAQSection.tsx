@@ -3,20 +3,28 @@ import { motion } from 'framer-motion';
 
 const FAQ_DATA = [
   {
-    question: 'What is the incubation program?',
-    answer: 'Our incubation program is a multi-month intensive journey for early-stage Web3 startups, providing seed funding, technical mentorship, and strategic marketing support to move from idea to MVP and beyond.'
+    question: 'What is ZenFinance?',
+    answer: 'ZenFinance is a decentralized lending protocol built on Zenchain. It allows users to supply ZIP-20 assets as collateral and borrow against them within a secure, validator-backed infrastructure.'
   },
   {
-    question: 'What is the acceleration program?',
-    answer: 'The acceleration program targets existing projects with traction, focusing on scaling, ecosystem integration, and institutional-grade fundraising preparation.'
+    question: 'How is ZenFinance different from other lending protocols?',
+    answer: 'ZenFinance is built natively on Zenchain’s cross-chain architecture. It integrates directly with the chain’s interoperability module, meaning collateral and liquidity routing are secured by validator consensus rather than external bridges.'
   },
   {
-    question: 'Which verticals are you investing in?',
-    answer: 'We focus on high-impact sectors including Artificial Intelligence (AI), Decentralized Finance (DeFi), Decentralized Physical Infrastructure Networks (DePIN), and Layer 1/Layer 2 scaling solutions.'
+    question: 'What assets can I supply?',
+    answer: 'You can supply supported ZIP-20 tokens, which represent assets bridged into Zenchain from external blockchains.'
   },
   {
-    question: 'What is your investment thesis?',
-    answer: 'We believe in backing builders who solve real-world problems using blockchain technology, focusing on sustainable tokenomics, technical innovation, and product-market fit.'
+    question: 'How are collateral ratios determined?',
+    answer: 'Collateral factors (Loan-to-Value ratios) are determined based on asset type, facilitator structure, and overall risk profile. These parameters may be adjusted through governance to maintain system stability.'
+  },
+  {
+    question: 'How are cross-chain transactions secured?',
+    answer: 'Outgoing cross-chain actions are executed through validator multisignature infrastructure. Incoming transactions are validated through standardized cross-chain verification processes.'
+  },
+  {
+    question: 'Are there risks involved?',
+    answer: 'Yes. Risks include smart contract risk, liquidation risk, market volatility, and cross-chain infrastructure risks. Users should understand these risks before participating.'
   },
 ];
 
@@ -26,19 +34,21 @@ const FAQSection: React.FC = () => {
   return (
     <section className="w-full bg-[#111111] border-b border-white/10">
       {/* Header Row */}
-      <div className="flex flex-col md:flex-row md:h-56 border-b border-white/10">
+      <div className="flex flex-col md:flex-row md:h-56 border-b border-white/10 relative">
         {/* FAQ Text Block */}
-        <div className="w-full md:w-1/4 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 bg-white/5">
+        <div className="w-full md:w-1/4 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 bg-white/5 relative">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h2 className="text-7xl sm:text-9xl md:text-[120px] font-black uppercase tracking-tighter mono-font leading-none select-none text-white">
             FAQ
           </h2>
         </div>
 
-        {/* Small Spacer Column - Hidden on mobile */}
-        <div className="hidden md:block w-[10%] border-r border-white/10 bg-white/10"></div>
-
         {/* 3D Visual Column */}
-        <div className="w-full md:w-1/4 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 relative p-8 group overflow-hidden">
+        <div className="w-full md:w-1/2 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 relative p-8 group overflow-hidden">
+           <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+           
            <div className="absolute top-4 left-4 w-4 h-4 border-t border-l border-white/20"></div>
            <div className="absolute top-4 right-4 w-4 h-4 border-t border-r border-white/20"></div>
            <div className="absolute bottom-4 left-4 w-4 h-4 border-b border-l border-white/20"></div>
@@ -95,7 +105,7 @@ const FAQSection: React.FC = () => {
         </div>
 
         {/* Most Common Questions Title Column */}
-        <div className="flex-1 flex flex-col justify-center p-8 md:px-12 gap-2">
+        <div className="w-full md:w-1/4 flex flex-col justify-center p-8 md:px-12 gap-2">
           <div className="flex items-center gap-3">
              <div className="w-2.5 h-2.5 bg-white shrink-0"></div>
              <h3 className="text-xl md:text-2xl font-bold uppercase tracking-tight mono-font text-white">Most Common Questions</h3>

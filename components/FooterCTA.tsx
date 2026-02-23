@@ -6,14 +6,18 @@ const FooterCTA: React.FC = () => {
 
   return (
     <section className="w-full bg-[#111111] border-b border-white/10">
-      <div className="flex flex-col lg:flex-row w-full min-h-[220px]">
+      <div className="flex flex-col lg:flex-row w-full min-h-[220px] relative">
         {/* Left Column: Logo */}
-        <div className="w-full lg:w-1/4 flex items-center px-6 md:px-12 py-8 lg:py-0 border-b lg:border-b-0 lg:border-r border-white/10">
+        <div className="w-full lg:w-1/4 flex items-center px-6 md:px-12 py-8 lg:py-0 border-b lg:border-b-0 lg:border-r border-white/10 relative">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
           <Logo />
         </div>
 
         {/* Middle Column: Subscription Input */}
-        <div className="flex-1 flex flex-col justify-center px-6 md:px-12 border-b lg:border-b-0 lg:border-r border-white/10 py-12">
+        <div className="flex-1 flex flex-col justify-center px-6 md:px-12 border-b lg:border-b-0 lg:border-r border-white/10 py-12 relative">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h3 className="text-2xl md:text-3xl font-medium mono-font mb-8 text-white">
             Subscribe to be in touch*
           </h3>
@@ -37,14 +41,13 @@ const FooterCTA: React.FC = () => {
           </div>
           
           <div className="flex justify-start lg:justify-end">
-            <button className="w-full sm:w-auto relative bg-[#35CB87] text-black hover:text-white group transition-colors duration-300 rounded-md">
-              {/* Custom shape using clip-path for the "cut-off" corner look */}
-              <div 
-                className="px-12 py-4 font-bold uppercase tracking-[0.2em] mono-font text-sm flex items-center justify-center transition-transform active:scale-95"
-                style={{
-                  clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
-                }}
-              >
+            <button 
+              className="w-full sm:w-auto relative bg-[#35CB87] text-black hover:text-white group transition-colors duration-300 overflow-visible rounded-md"
+              style={{
+                clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)'
+              }}
+            >
+              <div className="px-12 py-4 font-bold uppercase tracking-[0.2em] mono-font text-sm flex items-center justify-center transition-transform active:scale-95">
                 SUBSCRIBE
               </div>
               {/* Hover highlight overlay */}

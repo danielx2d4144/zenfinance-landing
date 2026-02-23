@@ -4,9 +4,11 @@ import { NAV_ITEMS } from '../constants';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useWallet } from './WalletProvider';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { account, connectWallet, formatAddress } = useWallet();
 
   return (
     <header className="w-full border-b border-white/10 flex h-20 md:h-24 bg-black sticky top-0 z-50">
@@ -44,7 +46,9 @@ const Header: React.FC = () => {
             <span>Ecosystem</span>
           </div>
         </button>
-        <Button variant="primary">LAUNCH APP</Button>
+        <Button variant="primary" onClick={connectWallet}>
+          {account ? formatAddress(account) : 'LAUNCH APP'}
+        </Button>
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -88,7 +92,9 @@ const Header: React.FC = () => {
                   </div>
                   Our Ecosystem
                 </button>
-                <Button variant="primary" className="w-full">LAUNCH APP</Button>
+                <Button variant="primary" className="w-full" onClick={connectWallet}>
+                  {account ? formatAddress(account) : 'LAUNCH APP'}
+                </Button>
               </div>
             </nav>
           </motion.div>

@@ -56,12 +56,15 @@ const Hero: React.FC = () => {
       {/* Top Banner Row (Main Content) */}
       <div className="flex flex-col md:flex-row flex-1 relative z-10">
         {/* Left Sidebar: Vertical Text - Hidden on mobile */}
-        <div className="hidden md:flex w-1/6 p-10 border-r border-white/10 flex-col items-center justify-between backdrop-blur-[2px]">
+        <div className="hidden md:flex w-1/4 p-10 border-r border-white/10 flex-col items-center justify-between backdrop-blur-[2px] relative">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          
           <div className="w-2.5 h-2.5 bg-[#35CB87] shadow-[0_0_15px_rgba(53,203,135,0.5)]"></div>
           
           <div className="relative h-48 flex items-center justify-center">
             <span className="text-[10px] font-bold uppercase tracking-[0.4em] mono-font text-white whitespace-nowrap rotate-90 origin-center opacity-70">
-              ZEN FINANCE LABS
+              ZEN FINANCE
             </span>
           </div>
 
@@ -69,7 +72,10 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Center Main Text Content */}
-        <div className="flex-1 flex flex-col relative border-r border-white/10">
+        <div className="w-full md:w-1/2 flex flex-col relative border-r border-white/10">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
+
           <div className="flex-1 flex flex-col items-center justify-center px-6 md:px-12 pt-32 md:pt-24 pb-12">
             <div 
               className="transition-transform duration-300 ease-out"
@@ -86,8 +92,9 @@ const Hero: React.FC = () => {
           
           {/* Bottom Info Row */}
           <div className="p-8 md:p-12 border-t border-white/10 bg-black/20 backdrop-blur-md">
-            <p className="text-base md:text-xl font-medium leading-relaxed max-w-lg mono-font text-white/80 text-center md:text-left mx-auto md:mx-0">
-              Backing the very best web3 builders — transforming visionary ideas into real-world growth through the path of Zen.
+            <p className="text-base md:text-xl font-medium leading-relaxed max-w-2xl mono-font text-white/80 text-center md:text-left mx-auto md:mx-0">
+              ZenFinance is a next-generation lending protocol built natively on Zenchain.<br />
+              Supply ZIP-20 assets, unlock cross-chain liquidity, and borrow with validator-secured interoperability powered by CCIM
             </p>
           </div>
         </div>
@@ -125,11 +132,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Floating Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 opacity-50">
-        <div className="w-px h-12 bg-gradient-to-b from-transparent via-[#35CB87] to-transparent"></div>
-        <span className="text-[8px] mono-font tracking-widest text-white/50 uppercase">Scroll to Explore</span>
-      </div>
+      {/* Floating Scroll Indicator removed */}
     </section>
   );
 };

@@ -13,3 +13,9 @@ export enum ThemeColor {
   BG_GRAY = '#111111',
   BORDER_GRAY = 'rgba(255,255,255,0.1)'
 }
+
+declare global {
+  interface Window {
+    ethereum?: any;
+  }
+}

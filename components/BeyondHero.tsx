@@ -1,6 +1,9 @@
 import React from 'react';
+import { useWallet } from './WalletProvider';
 
 const BeyondHero: React.FC = () => {
+  const { account, connectWallet, formatAddress } = useWallet();
+
   return (
     <section className="bg-[#111111] w-full min-h-[700px] border-b border-white/10 relative overflow-hidden font-sans">
       {/* Top Banner */}
@@ -24,7 +27,10 @@ const BeyondHero: React.FC = () => {
 
       <div className="flex flex-col lg:flex-row w-full min-h-[600px]">
         {/* Left Column: Sectors & Apply */}
-        <div className="w-full lg:w-[30%] p-8 md:p-12 flex flex-col justify-start border-b lg:border-b-0 lg:border-r border-white/10 relative">
+        <div className="w-full lg:w-1/4 p-8 md:p-12 flex flex-col justify-start border-b lg:border-b-0 lg:border-r border-white/10 relative">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          
           {/* Subtle Grid Texture */}
           <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
                style={{ 
@@ -36,7 +42,7 @@ const BeyondHero: React.FC = () => {
           <div className="flex items-start gap-4 mb-8 md:mb-12 relative z-10">
             <div className="w-2.5 h-2.5 bg-white mt-1.5 flex-shrink-0"></div>
             <h2 className="text-xl md:text-2xl font-bold leading-tight mono-font text-white uppercase tracking-tight">
-              Supercharging Web3<br />Builders
+              Supercharging Web3<br />lending
             </h2>
           </div>
 
@@ -72,18 +78,22 @@ const BeyondHero: React.FC = () => {
 
           <div className="flex justify-center">
             <button 
-              className="bg-[#35CB87] text-black px-10 py-3 font-bold uppercase text-[11px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#35CB87]/20 rounded-md"
+              onClick={connectWallet}
+              className="bg-[#35CB87] text-black px-10 py-3 font-bold uppercase text-[11px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#35CB87]/20 overflow-visible rounded-md"
               style={{
-                clipPath: 'polygon(15px 0, 100% 0, 100% calc(100% - 15px), calc(100% - 15px) 100%, 0 100%, 0 15px)'
+                clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)'
               }}
             >
-              LAUNCH APP
+              {account ? formatAddress(account) : 'LAUNCH APP'}
             </button>
           </div>
         </div>
 
         {/* Center Column: Robot Capsule */}
-        <div className="flex-1 flex justify-center py-12 md:py-0 relative">
+        <div className="w-full lg:w-1/2 flex justify-center py-12 md:py-0 relative border-r border-white/10">
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          
           <div className="w-[280px] sm:w-[340px] h-[500px] sm:h-[600px] bg-black rounded-t-full rounded-b-[100px] border-x-4 border-black shadow-2xl relative flex flex-col items-center overflow-hidden">
             {/* Top Cap */}
             <div className="w-full h-12 bg-gray-900 border-b border-white/5"></div>
@@ -127,7 +137,7 @@ const BeyondHero: React.FC = () => {
         </div>
 
         {/* Right Column: Smart Capital & Programs */}
-        <div className="w-full lg:w-[30%] p-8 md:p-12 flex flex-col border-t lg:border-t-0 border-white/10">
+        <div className="w-full lg:w-1/4 p-8 md:p-12 flex flex-col border-t lg:border-t-0 border-white/10">
           <div className="flex items-start gap-2 mb-2">
             <div className="w-1.5 h-1.5 bg-white mt-1.5"></div>
             <h2 className="text-xl font-bold mono-font uppercase text-white">Smart Capital</h2>

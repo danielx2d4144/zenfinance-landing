@@ -7,38 +7,49 @@ import FAQSection from './components/FAQSection';
 import Partners from './components/Partners';
 import FooterCTA from './components/FooterCTA';
 import Footer from './components/Footer';
+import { WalletProvider } from './components/WalletProvider';
 
 const App: React.FC = () => {
   return (
-    <div className="min-h-screen bg-black selection:bg-[#35CB87] selection:text-black">
-      {/* Container to maintain alignment with the reference image's grid lines */}
-      <div className="max-w-[1920px] mx-auto bg-black/50 min-h-screen border-x border-white/10 bg-grid-squares">
-        <Header />
-        
-        <main>
-          {/* 1. Primary Hero Section (The site "Header" area) */}
-          <Hero />
-          
-          {/* 2. Partners Carousel */}
-          <Partners />
-          
-          {/* 3. Features Section (Beyond Capital deep-dive) */}
-          <BeyondHero />
-          
-          {/* 4. Team Section */}
-          <TeamSection />
+    <WalletProvider>
+      <div className="min-h-screen bg-black selection:bg-[#35CB87] selection:text-black relative">
+        {/* Global Vertical Grid Lines */}
+        <div className="fixed inset-0 pointer-events-none z-0 max-w-[1920px] mx-auto flex">
+          <div className="w-1/4 h-full border-r border-white/5"></div>
+          <div className="w-1/4 h-full border-r border-white/5"></div>
+          <div className="w-1/4 h-full border-r border-white/5"></div>
+          <div className="w-1/4 h-full"></div>
+        </div>
 
-          {/* 5. FAQ Section */}
-          <FAQSection />
+        {/* Container to maintain alignment with the reference image's grid lines */}
+        <div className="max-w-[1920px] mx-auto bg-black/50 min-h-screen border-x border-white/10 bg-grid-squares relative z-10">
+          <Header />
+          
+          <main>
+            {/* 1. Primary Hero Section (The site "Header" area) */}
+            <Hero />
+            
+            {/* 2. Partners Carousel */}
+            <Partners />
+            
+            {/* 3. Features Section (Beyond Capital deep-dive) */}
+            <BeyondHero />
+            
+            {/* 4. Team Section */}
+            <TeamSection />
 
-          {/* 6. Footer Call To Action */}
-          <FooterCTA />
+            {/* 5. FAQ Section */}
+            <FAQSection />
 
-          {/* 7. Final Footer */}
-          <Footer />
-        </main>
+            {/* 6. Footer Call To Action */}
+            <FooterCTA />
+
+            {/* 7. Final Footer */}
+            <Footer />
+          </main>
+        </div>
       </div>
-    </div>
+    </WalletProvider>
   );
 };
 
