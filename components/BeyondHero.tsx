@@ -1,5 +1,6 @@
 import React from 'react';
 import { useWallet } from './WalletProvider';
+import ZenFinanceLogo from './ZenFinanceLogo';
 
 const BeyondHero: React.FC = () => {
   const { account, connectWallet, formatAddress } = useWallet();
@@ -28,8 +29,8 @@ const BeyondHero: React.FC = () => {
       <div className="flex flex-col lg:flex-row w-full min-h-[600px]">
         {/* Left Column: Sectors & Apply */}
         <div className="w-full lg:w-1/4 p-8 md:p-12 flex flex-col justify-start border-b lg:border-b-0 lg:border-r border-white/10 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           
           {/* Subtle Grid Texture */}
           <div className="absolute inset-0 opacity-[0.05] pointer-events-none" 
@@ -91,8 +92,8 @@ const BeyondHero: React.FC = () => {
 
         {/* Center Column: Robot Capsule */}
         <div className="w-full lg:w-1/2 flex justify-center py-12 md:py-0 relative border-r border-white/10">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           
           <div className="w-[280px] sm:w-[340px] h-[500px] sm:h-[600px] bg-black rounded-t-full rounded-b-[100px] border-x-4 border-black shadow-2xl relative flex flex-col items-center overflow-hidden">
             {/* Top Cap */}
@@ -100,23 +101,8 @@ const BeyondHero: React.FC = () => {
             
             {/* Glass Chamber */}
             <div className="w-full flex-1 bg-gradient-to-b from-black via-blue-900/10 to-gray-900 relative flex items-center justify-center overflow-hidden">
-              {/* Robot Mascot */}
-              <div className="relative z-20 animate-bounce duration-[3000ms] flex flex-col items-center">
-                 {/* Robot Head */}
-                 <div className="w-24 h-24 sm:w-32 sm:h-32 bg-[#35CB87] rounded-3xl p-3 flex items-center justify-center border-4 border-black shadow-lg">
-                    <div className="w-full h-full bg-white rounded-xl flex items-center justify-center gap-4 border border-black/20">
-                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-black rounded-full"></div>
-                        <div className="w-2 h-2 sm:w-2.5 sm:h-2.5 bg-black rounded-full"></div>
-                    </div>
-                 </div>
-                 {/* Robot Body */}
-                 <div className="w-12 h-16 sm:w-16 sm:h-20 bg-black border-2 border-gray-800 rounded-2xl mt-[-8px] sm:mt-[-10px] shadow-md flex items-center justify-center">
-                    <div className="w-6 h-6 sm:w-8 sm:h-8 bg-gray-900 rounded-full border border-gray-800"></div>
-                 </div>
-                 {/* Robot Arms */}
-                 <div className="absolute left-[-15px] sm:left-[-20px] top-[110px] sm:top-[140px] w-4 h-10 sm:w-6 sm:h-12 bg-black border border-gray-800 rounded-full -rotate-12"></div>
-                 <div className="absolute right-[-15px] sm:right-[-20px] top-[110px] sm:top-[140px] w-4 h-10 sm:w-6 sm:h-12 bg-black border border-gray-800 rounded-full rotate-12"></div>
-              </div>
+              {/* ZenFinance Logo Animation */}
+              <ZenFinanceLogo className="w-full max-w-[240px] z-20" />
               
               {/* Floor/Base Reflections */}
               <div className="absolute bottom-0 w-full h-24 bg-gradient-to-t from-gray-800 to-transparent opacity-50"></div>

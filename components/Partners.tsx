@@ -7,19 +7,19 @@ const Partners: React.FC = () => {
       {/* Header Row */}
       <div className="flex w-full border-b border-white/10 h-auto md:h-16 flex-col md:flex-row relative">
         <div className="w-full md:w-1/4 flex items-center justify-center py-4 md:py-0 border-b md:border-b-0 md:border-r border-white/10 bg-white/5 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <span className="text-[10px] md:text-[12px] font-bold uppercase tracking-[0.2em] mono-font text-[#35CB87]">
             SUPPORTED BLOCKCHAIN
           </span>
         </div>
         <div className="hidden md:block w-1/4 border-r border-white/10 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
         </div>
         <div className="hidden md:block w-1/4 border-r border-white/10 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
         </div>
         <div className="hidden md:block w-1/4 relative">
         </div>

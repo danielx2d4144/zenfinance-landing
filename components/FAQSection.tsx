@@ -32,13 +32,13 @@ const FAQSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="w-full bg-[#111111] border-b border-white/10">
+    <section id="faq" className="w-full bg-[#111111] border-b border-white/10">
       {/* Header Row */}
       <div className="flex flex-col md:flex-row md:h-56 border-b border-white/10 relative">
         {/* FAQ Text Block */}
         <div className="w-full md:w-1/4 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 bg-white/5 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h2 className="text-7xl sm:text-9xl md:text-[120px] font-black uppercase tracking-tighter mono-font leading-none select-none text-white">
             FAQ
           </h2>
@@ -46,8 +46,8 @@ const FAQSection: React.FC = () => {
 
         {/* 3D Visual Column */}
         <div className="w-full md:w-1/2 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 relative p-8 group overflow-hidden">
-           <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+           <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
            
            <div className="absolute top-4 left-4 w-4 h-4 border-t border-l border-white/20"></div>
            <div className="absolute top-4 right-4 w-4 h-4 border-t border-r border-white/20"></div>

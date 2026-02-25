@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Logo from './Logo';
 import { NAV_ITEMS } from '../constants';
 import Button from './Button';
@@ -9,12 +10,30 @@ import { useWallet } from './WalletProvider';
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { account, connectWallet, formatAddress } = useWallet();
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (href.startsWith('/#')) {
+      const id = href.split('#')[1];
+      if (location.pathname === '/') {
+        e.preventDefault();
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+        setIsMenuOpen(false);
+      }
+    }
+  };
 
   return (
     <header className="w-full border-b border-white/10 flex h-20 md:h-24 bg-black sticky top-0 z-50">
       {/* Logo Section */}
       <div className="w-1/2 md:w-1/4 flex items-center px-6 md:px-12 border-r border-white/10">
-        <Logo />
+        <Link to="/">
+          <Logo />
+        </Link>
       </div>
 
       {/* Navigation Section - Desktop */}
@@ -24,6 +43,7 @@ const Header: React.FC = () => {
             <a 
               key={item.label} 
               href={item.href} 
+              onClick={(e) => handleNavClick(e, item.href)}
               className="text-[10px] uppercase font-bold tracking-[0.15em] hover:text-[#35CB87] transition-colors mono-font text-white/70"
             >
               {item.label}
@@ -33,19 +53,7 @@ const Header: React.FC = () => {
       </div>
 
       {/* Action Section - Desktop */}
-      <div className="hidden md:flex w-1/4 items-center justify-between pl-8 pr-4">
-        <button className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest hover:text-[#35CB87] transition-colors mono-font text-white/70 group">
-          <div className="grid grid-cols-2 gap-0.5 p-0.5 border border-white/5 group-hover:border-[#35CB87]/30">
-            <div className="w-1.5 h-1.5 bg-[#35CB87]"></div>
-            <div className="w-1.5 h-1.5 bg-[#35CB87]"></div>
-            <div className="w-1.5 h-1.5 bg-[#35CB87]"></div>
-            <div className="w-1.5 h-1.5 bg-[#35CB87]"></div>
-          </div>
-          <div className="flex flex-col items-start leading-none">
-            <span>Our</span>
-            <span>Ecosystem</span>
-          </div>
-        </button>
+      <div className="hidden md:flex w-1/4 items-center justify-end pl-8 pr-4">
         <Button variant="primary" onClick={connectWallet}>
           {account ? formatAddress(account) : 'LAUNCH APP'}
         </Button>
@@ -75,7 +83,10 @@ const Header: React.FC = () => {
                 <a 
                   key={item.label} 
                   href={item.href} 
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    handleNavClick(e, item.href);
+                    setIsMenuOpen(false);
+                  }}
                   className="text-sm uppercase font-bold tracking-[0.2em] hover:text-[#35CB87] transition-colors mono-font text-white/70"
                 >
                   {item.label}
@@ -83,15 +94,6 @@ const Header: React.FC = () => {
               ))}
               <div className="h-px bg-white/10 my-2"></div>
               <div className="flex flex-col gap-6">
-                <button className="flex items-center gap-4 text-sm font-bold uppercase tracking-widest text-white/70">
-                  <div className="grid grid-cols-2 gap-1 p-1 border border-white/10">
-                    <div className="w-2 h-2 bg-[#35CB87]"></div>
-                    <div className="w-2 h-2 bg-[#35CB87]"></div>
-                    <div className="w-2 h-2 bg-[#35CB87]"></div>
-                    <div className="w-2 h-2 bg-[#35CB87]"></div>
-                  </div>
-                  Our Ecosystem
-                </button>
                 <Button variant="primary" className="w-full" onClick={connectWallet}>
                   {account ? formatAddress(account) : 'LAUNCH APP'}
                 </Button>

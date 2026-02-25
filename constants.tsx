@@ -3,12 +3,12 @@ import React from 'react';
 import { NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'Our Programs', href: '#' },
-  { label: 'Portfolio', href: '#' },
+  { label: 'Our Markets', href: '/#markets' },
+  { label: 'Testnet', href: '#' },
   { label: 'Media', href: '#' },
   { label: 'Reviews', href: '#' },
-  { label: 'Team', href: '#' },
-  { label: 'FAQ', href: '#' },
+  { label: 'Team', href: '/#team' },
+  { label: 'FAQ', href: '/#faq' },
   { label: 'Blog', href: '#' },
 ];
 

@@ -4,10 +4,10 @@ import { X, Send } from 'lucide-react';
 
 const TEAM_MEMBERS = [
   {
-    name: 'Ariel Asafov',
-    role: 'INCUBATION DIRECTOR',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
-    bio: 'Industrial Engineer with previous experience in managing the Israeli Railway System and managing product development of other tech companies including Judea. Ariel brings his vast experience and knowledge into his Chief Operations Officer (COO) role at ZenFinance.'
+    name: 'Daniel Josiah',
+    role: 'COFOUNDER',
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
+    bio: 'Mechatronics Engineer and dedicated blockchain developer focused on building in the Web3 space. Leverages engineering discipline and systems-level thinking to design secure smart contracts and scalable decentralized applications. Actively engaged in the Web3 ecosystem, contributing to and exploring emerging technologies that drive the future of decentralized finance and trustless infrastructure.'
   },
   {
     name: 'Vlad Filatov',
@@ -44,13 +44,13 @@ const TeamSection: React.FC = () => {
   };
 
   return (
-    <section className="w-full bg-[#111111] border-b border-white/10 relative">
+    <section id="team" className="w-full bg-[#111111] border-b border-white/10 relative">
       {/* Header Row */}
       <div className="flex flex-col md:flex-row md:h-48 border-b border-white/10 relative">
         {/* Title Area */}
         <div className="w-full md:w-1/2 flex items-center px-6 md:px-12 py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 bg-white/5 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h2 className="text-6xl sm:text-7xl md:text-8xl font-black uppercase tracking-tighter mono-font leading-none select-none text-white">
             OUR TEAM
           </h2>
@@ -58,8 +58,8 @@ const TeamSection: React.FC = () => {
         
         {/* Tagline Area */}
         <div className="w-full md:w-1/4 p-8 md:p-10 flex items-start gap-3 border-b md:border-b-0 md:border-r border-white/10 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <div className="w-2 h-2 bg-white mt-1.5 shrink-0"></div>
           <p className="text-lg md:text-xl font-medium leading-tight mono-font text-white">
             Built by Founders<br />For Founders
@@ -150,34 +150,34 @@ const TeamSection: React.FC = () => {
 
               {/* Back Side (Bio) */}
               <div 
-                className="absolute inset-0 w-full h-full bg-[#E5E5E5] text-black flex flex-col shadow-2xl overflow-hidden"
+                className="absolute inset-0 w-full h-full bg-[#111111] text-white flex flex-col shadow-2xl overflow-hidden"
                 style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
               >
                 {/* Diagonal Corner Lines */}
                 <div className="absolute top-0 left-0 w-10 h-10 pointer-events-none">
-                  <div className="absolute top-0 left-0 w-[140%] h-[1px] bg-black/30 origin-top-left rotate-45"></div>
+                  <div className="absolute top-0 left-0 w-[140%] h-[1px] bg-white/10 origin-top-left rotate-45"></div>
                 </div>
                 <div className="absolute top-0 right-0 w-10 h-10 pointer-events-none">
-                  <div className="absolute top-0 right-0 w-[140%] h-[1px] bg-black/30 origin-top-right -rotate-45"></div>
+                  <div className="absolute top-0 right-0 w-[140%] h-[1px] bg-white/10 origin-top-right -rotate-45"></div>
                 </div>
                 <div className="absolute bottom-0 left-0 w-10 h-10 pointer-events-none">
-                  <div className="absolute bottom-0 left-0 w-[140%] h-[1px] bg-black/30 origin-bottom-left -rotate-45"></div>
+                  <div className="absolute bottom-0 left-0 w-[140%] h-[1px] bg-white/10 origin-bottom-left -rotate-45"></div>
                 </div>
                 <div className="absolute bottom-0 right-0 w-10 h-10 pointer-events-none">
-                  <div className="absolute bottom-0 right-0 w-[140%] h-[1px] bg-black/30 origin-bottom-right rotate-45"></div>
+                  <div className="absolute bottom-0 right-0 w-[140%] h-[1px] bg-white/10 origin-bottom-right rotate-45"></div>
                 </div>
 
                 {/* Main Content Area */}
-                <div className="flex-1 p-10 pt-14 flex flex-col border-b border-black/10 overflow-y-auto custom-scrollbar">
-                  <p className="text-[15px] font-medium mono-font leading-relaxed text-left">
+                <div className="flex-1 p-10 pt-14 flex flex-col border-b border-white/10 overflow-y-auto custom-scrollbar">
+                  <p className="text-[15px] font-medium mono-font leading-relaxed text-left text-white/70">
                     {member.bio}
                   </p>
                 </div>
 
                 {/* Footer Area */}
-                <div className="p-6 px-10 flex items-center justify-between bg-[#E5E5E5]">
+                <div className="p-6 px-10 flex items-center justify-between bg-black">
                   <button className="hover:opacity-70 transition-opacity">
-                    <Send size={24} className="text-black -rotate-12" />
+                    <Send size={24} className="text-white -rotate-12" />
                   </button>
 
                   <button 
@@ -185,14 +185,14 @@ const TeamSection: React.FC = () => {
                       e.stopPropagation();
                       setFlippedIndex(null);
                     }}
-                    className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest mono-font group"
+                    className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest mono-font group text-white"
                   >
-                    BIO <X size={20} className="text-[#FF6B35] group-hover:rotate-90 transition-transform duration-300" />
+                    BIO <X size={20} className="text-[#35CB87] group-hover:rotate-90 transition-transform duration-300" />
                   </button>
                 </div>
 
                 {/* Decorative Border Lines */}
-                <div className="absolute inset-0 border border-black/10 pointer-events-none"></div>
+                <div className="absolute inset-0 border border-white/10 pointer-events-none"></div>
               </div>
             </motion.div>
           </div>

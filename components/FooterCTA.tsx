@@ -9,15 +9,15 @@ const FooterCTA: React.FC = () => {
       <div className="flex flex-col lg:flex-row w-full min-h-[220px] relative">
         {/* Left Column: Logo */}
         <div className="w-full lg:w-1/4 flex items-center px-6 md:px-12 py-8 lg:py-0 border-b lg:border-b-0 lg:border-r border-white/10 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <Logo />
         </div>
 
         {/* Middle Column: Subscription Input */}
         <div className="flex-1 flex flex-col justify-center px-6 md:px-12 border-b lg:border-b-0 lg:border-r border-white/10 py-12 relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h3 className="text-2xl md:text-3xl font-medium mono-font mb-8 text-white">
             Subscribe to be in touch*
           </h3>

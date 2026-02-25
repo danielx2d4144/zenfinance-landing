@@ -57,8 +57,8 @@ const Hero: React.FC = () => {
       <div className="flex flex-col md:flex-row flex-1 relative z-10">
         {/* Left Sidebar: Vertical Text - Hidden on mobile */}
         <div className="hidden md:flex w-1/4 p-10 border-r border-white/10 flex-col items-center justify-between backdrop-blur-[2px] relative">
-          <div className="absolute top-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 -translate-y-1/2 z-20"></div>
-          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#FF6B35] translate-x-1/2 translate-y-1/2 z-20"></div>
+          <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
+          <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           
           <div className="w-2.5 h-2.5 bg-[#35CB87] shadow-[0_0_15px_rgba(53,203,135,0.5)]"></div>
           
