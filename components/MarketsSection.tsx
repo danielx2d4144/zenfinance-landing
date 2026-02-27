@@ -12,8 +12,8 @@ const MARKETS = [
     color: '#26A17B'
   },
   {
-    name: 'Kraken Wrapped Bitcoin',
-    symbol: 'kBTC',
+    name: 'Zen Bitcoin',
+    symbol: 'zBTC',
     logo: 'https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=040',
     apy: '1.80%',
     tvl: '$45.2M',

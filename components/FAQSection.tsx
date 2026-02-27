@@ -45,7 +45,7 @@ const FAQSection: React.FC = () => {
         </div>
 
         {/* 3D Visual Column */}
-        <div className="w-full md:w-1/2 flex items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 relative p-8 group overflow-hidden">
+        <div className="hidden md:flex md:w-1/2 items-center justify-center py-12 md:py-0 border-b md:border-b-0 md:border-r border-white/10 relative p-8 group overflow-hidden">
            <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
            <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
            

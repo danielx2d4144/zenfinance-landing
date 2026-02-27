@@ -91,7 +91,7 @@ const BeyondHero: React.FC = () => {
         </div>
 
         {/* Center Column: Robot Capsule */}
-        <div className="w-full lg:w-1/2 flex justify-center py-12 md:py-0 relative border-r border-white/10">
+        <div className="hidden lg:flex lg:w-1/2 justify-center py-12 md:py-0 relative border-r border-white/10">
           <div className="absolute top-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 -translate-y-1/2 z-20"></div>
           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           
