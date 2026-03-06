@@ -33,7 +33,12 @@ const Partners: React.FC = () => {
             className={`h-24 md:h-32 flex items-center justify-center p-4 md:p-8 grayscale invert hover:grayscale-0 hover:invert-0 transition-all cursor-pointer border-b md:border-b-0 ${index !== PARTNERS.length - 1 ? 'border-r' : ''} border-white/10 relative`}
           >
             <div className="flex items-center gap-2 md:gap-4">
-              <img src={partner.logo} alt={partner.name} className="h-6 md:h-10 w-auto" />
+              <img 
+                src={partner.logo} 
+                alt={partner.name} 
+                className="h-6 md:h-10 w-auto" 
+                referrerPolicy="no-referrer"
+              />
               <span className="text-lg md:text-2xl font-bold uppercase tracking-tight mono-font text-white">{partner.name}</span>
             </div>
           </div>

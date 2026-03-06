@@ -10,22 +10,22 @@ const TEAM_MEMBERS = [
     bio: 'Mechatronics Engineer and dedicated blockchain developer focused on building in the Web3 space. Leverages engineering discipline and systems-level thinking to design secure smart contracts and scalable decentralized applications. Actively engaged in the Web3 ecosystem, contributing to and exploring emerging technologies that drive the future of decentralized finance and trustless infrastructure.'
   },
   {
-    name: 'Vlad Filatov',
-    role: 'INVESTMENTS DIRECTOR',
+    name: 'R.D Daniel',
+    role: 'COFOUNDER',
     image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
-    bio: 'Strategic investment professional with a focus on early-stage Web3 ecosystems. Vlad has a track record of identifying high-potential projects and providing strategic guidance for long-term growth.'
+    bio: 'Strategic investment professional with a focus on early-stage Web3 ecosystems. Daniel has a track record of identifying high-potential projects and providing strategic guidance for long-term growth.'
   },
   {
-    name: 'Nick van Der Kolk',
-    role: 'HEAD OF ADVERTISMENT',
+    name: 'Tanjiro',
+    role: 'Community manager & SMM',
     image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
-    bio: 'Marketing visionary with extensive experience in digital advertising and brand positioning within the crypto space. Nick leads our advertising strategies to ensure maximum reach and impact.'
+    bio: 'Growing early-stage Web3 projects with strategy and heart. Running AMAs, contests, and campaigns that turn lurkers into active, loyal community members. Passionate about DeFi, NFTs, and building real engagement.'
   },
   {
-    name: 'Gintare',
-    role: 'VC NETWORK MANAGER',
+    name: 'Mofi Sage',
+    role: 'DESIGN ARCHITECT',
     image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
-    bio: 'Expert in venture capital relations and network building. Gintare bridges the gap between innovative startups and institutional investors, fostering a robust ecosystem for growth.'
+    bio: 'Frontend Developer | UI/UX Designer | Student. 5+ years building clean, responsive interfaces with React, modern CSS, and Figma. Focused on creating intuitive user experiences that actually work. Currently juggling React, Figma, late-night commits'
   },
 ];
 
@@ -132,6 +132,7 @@ const TeamSection: React.FC = () => {
                           src={member.image} 
                           alt={member.name} 
                           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                          referrerPolicy="no-referrer"
                        />
                        <div className="absolute inset-0 bg-white/5 mix-blend-overlay"></div>
                     </div>

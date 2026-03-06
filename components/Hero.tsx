@@ -119,13 +119,28 @@ const Hero: React.FC = () => {
           
           {/* Social Sidebar - Horizontal on mobile */}
           <div className="relative md:absolute right-0 top-0 bottom-0 w-full md:w-16 border-t md:border-t-0 md:border-l border-white/10 bg-black/40 backdrop-blur-md flex flex-row md:flex-col items-center justify-center py-6 md:py-12 gap-8 md:gap-12">
-            <a href="#" className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2">
+            <a 
+              href="https://x.com/zenfinance_defi?s=20" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2"
+            >
               <Icons.Twitter />
             </a>
-            <a href="#" className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2">
+            <a 
+              href="https://t.me/zenfinance_defi" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2"
+            >
               <Icons.Telegram />
             </a>
-            <a href="#" className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2">
+            <a 
+              href="https://discord.gg/6qHtgYF33m" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="text-white/50 hover:text-[#35CB87] transition-all hover:scale-110 p-2"
+            >
               <Icons.Discord />
             </a>
           </div>

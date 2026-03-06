@@ -122,43 +122,51 @@ const BeyondHero: React.FC = () => {
           </div>
         </div>
 
-        {/* Right Column: Smart Capital & Programs */}
+        {/* Right Column: Smart Ecosystem & Features */}
         <div className="w-full lg:w-1/4 p-8 md:p-12 flex flex-col border-t lg:border-t-0 border-white/10">
           <div className="flex items-start gap-2 mb-2">
             <div className="w-1.5 h-1.5 bg-white mt-1.5"></div>
-            <h2 className="text-xl font-bold mono-font uppercase text-white">Smart Capital</h2>
+            <h2 className="text-xl font-bold mono-font uppercase text-white">Smart Ecosystem</h2>
           </div>
-          <p className="text-xs text-gray-400 mono-font mb-8 md:mb-12 ml-4">Our ecosystem support</p>
+          <p className="text-xs text-gray-400 mono-font mb-8 md:mb-12 ml-4">Our ecosystem features</p>
 
-          <div className="flex flex-col sm:flex-row gap-4">
-            {/* Program Card 01 */}
-            <div className="flex-1 bg-black p-6 rounded-lg border border-white/5 shadow-sm flex flex-col gap-4 group cursor-pointer hover:border-[#35CB87]/30 transition-colors">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {/* TVL Card 01 */}
+            <div className="bg-black p-4 rounded-lg border border-white/5 shadow-sm flex flex-col gap-4 group cursor-pointer hover:border-[#35CB87]/30 transition-colors h-full">
                <div className="flex justify-between items-center text-[10px] font-bold mono-font text-gray-500">
-                  <div className="w-2 h-2 bg-white"></div>
-                  <span>01</span>
+                  <div className="w-2 h-2 bg-[#35CB87] animate-pulse"></div>
+                  <span>LIVE STATS</span>
                </div>
-               <div className="w-full aspect-square bg-gray-900 rounded-lg flex items-center justify-center overflow-hidden border border-white/5 relative">
-                  <div className="w-12 h-12 border-4 border-gray-700 rotate-45 group-hover:rotate-90 transition-transform duration-500"></div>
+               <div className="w-full aspect-square bg-gray-900 rounded-lg flex flex-col items-center justify-center overflow-hidden border border-white/5 relative">
+                  <span className="text-2xl md:text-3xl font-black text-[#35CB87] mono-font tracking-tighter">$1M+</span>
+                  <span className="text-[8px] text-white/40 uppercase tracking-widest mt-1">Total Value Locked</span>
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-black/50 to-transparent"></div>
+                  {/* Subtle grid lines inside the box */}
+                  <div className="absolute inset-0 opacity-10 pointer-events-none bg-[linear-gradient(to_right,#35CB87_1px,transparent_1px),linear-gradient(to_bottom,#35CB87_1px,transparent_1px)] bg-[size:10px_10px]"></div>
                </div>
-               <h3 className="text-xs font-bold leading-tight mono-font text-white">Incubation &<br />Acceleration<br />Program</h3>
+               <h3 className="text-[10px] font-bold leading-tight mono-font text-white uppercase mt-auto tracking-tighter">ZenFinance<br />Protocol<br />TVL</h3>
             </div>
 
-            {/* Program Card 02 */}
-            <div className="flex-1 bg-black p-6 rounded-lg border border-white/5 shadow-sm flex flex-col gap-4 group cursor-pointer hover:border-[#35CB87]/30 transition-colors">
+            {/* Partnerships Card 02 */}
+            <div className="bg-black p-4 rounded-lg border border-white/5 shadow-sm flex flex-col gap-4 group cursor-pointer hover:border-[#35CB87]/30 transition-colors h-full">
                <div className="flex justify-between items-center text-[10px] font-bold mono-font text-gray-500">
-                  <div className="w-2 h-2 bg-white"></div>
-                  <span>02</span>
+                  <div className="w-2 h-2 bg-[#35CB87]"></div>
+                  <span>ECOSYSTEM</span>
                </div>
-               <div className="w-full aspect-square bg-gray-900 rounded-lg flex items-center justify-center overflow-hidden border border-white/5 relative">
-                  <div className="flex flex-col gap-1 items-end w-12">
-                    <div className="w-full h-3 bg-gray-700 rounded-sm"></div>
-                    <div className="w-3/4 h-3 bg-gray-700 rounded-sm"></div>
-                    <div className="w-1/2 h-3 bg-gray-700 rounded-sm"></div>
-                  </div>
+               <div className="w-full aspect-square bg-gray-900 rounded-lg flex flex-col items-center justify-center overflow-hidden border border-white/5 relative">
+                  <span className="text-2xl md:text-3xl font-black text-white mono-font tracking-tighter">5+</span>
+                  <span className="text-[8px] text-[#35CB87] uppercase tracking-widest mt-1 font-bold">Active Partners</span>
                   <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-black/50 to-transparent"></div>
+                  {/* Decorative dots pattern */}
+                  <div className="absolute inset-0 opacity-20 pointer-events-none flex items-center justify-center">
+                    <div className="grid grid-cols-3 gap-2">
+                      {[...Array(9)].map((_, i) => (
+                        <div key={i} className="w-1 h-1 bg-[#35CB87] rounded-full"></div>
+                      ))}
+                    </div>
+                  </div>
                </div>
-               <h3 className="text-xs font-bold leading-tight mono-font text-white">Investment &<br />Funding</h3>
+               <h3 className="text-[10px] font-bold leading-tight mono-font text-white uppercase mt-auto tracking-tighter">Active<br />Collaborations &<br />Partnerships</h3>
             </div>
           </div>
         </div>

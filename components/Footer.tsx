@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h4 className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mono-font mb-6 md:mb-8">Ecosystem</h4>
           <ul className="space-y-4">
-            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Zen AI</a></li>
-            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Zen Pad</a></li>
+            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Zen chain</a></li>
+            <li><a href="https://www.thrive.xyz/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Thrive Protocal</a></li>
           </ul>
         </div>
 
@@ -46,18 +46,18 @@ const Footer: React.FC = () => {
           <h4 className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mono-font mb-6 md:mb-8 md:hidden">Socials</h4>
           <ul className="space-y-4 text-left md:text-right w-full">
             <li>
-              <a href="#" className="flex items-center md:justify-end gap-2 text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors group">
+              <a href="https://x.com/zenfinance_defi?s=20" target="_blank" rel="noopener noreferrer" className="flex items-center md:justify-end gap-2 text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors group">
                 X/TWITTER <span className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center md:justify-end gap-2 text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors group">
-                LINKEDIN <span className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+              <a href="https://t.me/zenfinance_defi" target="_blank" rel="noopener noreferrer" className="flex items-center md:justify-end gap-2 text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors group">
+                TELEGRAM <span className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center md:justify-end gap-2 text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors group">
-                MEDIUM <span className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
+              <a href="https://discord.gg/6qHtgYF33m" target="_blank" rel="noopener noreferrer" className="flex items-center md:justify-end gap-2 text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors group">
+                DISCORD <span className="text-[10px] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform">↗</span>
               </a>
             </li>
           </ul>

@@ -6,7 +6,7 @@ const MARKETS = [
   {
     name: 'USDT',
     symbol: 'USDT0',
-    logo: 'https://cryptologos.cc/logos/tether-usdt-logo.svg?v=040',
+    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/usdt.png',
     apy: '4.25%',
     tvl: '$12.4M',
     color: '#26A17B'
@@ -14,7 +14,7 @@ const MARKETS = [
   {
     name: 'Zen Bitcoin',
     symbol: 'zBTC',
-    logo: 'https://cryptologos.cc/logos/bitcoin-btc-logo.svg?v=040',
+    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/btc.png',
     apy: '1.80%',
     tvl: '$45.2M',
     color: '#F7931A'
@@ -22,7 +22,7 @@ const MARKETS = [
   {
     name: 'Ethereum',
     symbol: 'ETH',
-    logo: 'https://cryptologos.cc/logos/ethereum-eth-logo.svg?v=040',
+    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/eth.png',
     apy: '2.15%',
     tvl: '$89.1M',
     color: '#627EEA'
@@ -90,7 +90,12 @@ const MarketsSection: React.FC = () => {
             {/* Asset Info */}
             <div className="col-span-1 md:col-span-6 p-6 md:p-8 px-6 md:px-12 border-b md:border-b-0 md:border-r border-white/10 flex items-center gap-6">
               <div className="w-12 h-12 rounded-full bg-white/5 p-2.5 flex items-center justify-center border border-white/10 group-hover:border-[#35CB87]/30 transition-colors">
-                <img src={market.logo} alt={market.name} className="w-full h-full object-contain" />
+                <img 
+                  src={market.logo} 
+                  alt={market.name} 
+                  className="w-full h-full object-contain" 
+                  referrerPolicy="no-referrer"
+                />
               </div>
               <div className="flex flex-col">
                 <h4 className="text-xl font-bold text-white mono-font tracking-tight">{market.name}</h4>
