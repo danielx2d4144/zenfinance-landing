@@ -118,7 +118,8 @@ const MarketsSection: React.FC = () => {
             {/* Action */}
             <div className="col-span-1 md:col-span-2 p-6 md:p-8 flex items-center justify-center">
               <button 
-                className="w-full md:w-auto px-8 py-3 bg-[#35CB87] text-black text-[11px] font-black uppercase tracking-[0.2em] mono-font hover:bg-white transition-colors relative overflow-hidden"
+                onClick={() => window.open('https://app.zenfinance.online/', '_blank')}
+                className="w-full md:w-auto px-8 py-3 bg-[#35CB87] text-black text-[11px] font-black uppercase tracking-[0.2em] mono-font hover:bg-white transition-colors relative overflow-hidden cursor-pointer"
                 style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
               >
                 Supply

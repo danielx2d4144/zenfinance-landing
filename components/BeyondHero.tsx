@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import ZenFinanceLogo from './ZenFinanceLogo';
 
 const BeyondHero: React.FC = () => {
@@ -77,15 +76,17 @@ const BeyondHero: React.FC = () => {
           </div>
 
           <div className="flex justify-center">
-            <Link 
-              to="/beta"
+            <a 
+              href="https://app.zenfinance.online/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-[#35CB87] text-black px-10 py-3 font-bold uppercase text-[11px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#35CB87]/20 overflow-visible rounded-md inline-block text-center"
               style={{
                 clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)'
               }}
             >
               LAUNCH APP
-            </Link>
+            </a>
           </div>
         </div>
 

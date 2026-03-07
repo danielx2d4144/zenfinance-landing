@@ -3,8 +3,8 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send } from 'lucide-react';
 import danielJosiahImage from './teampfp/bio pic.jpg';
 import mofiSageImage from './teampfp/mofi bio pic.jpg';
-import rdDanielImage from './teampfp/RDpfp_b&w.png';
-import tanjiroImage from './teampfp/tangiro_pfp_b&w.png';
+import rdDanielImage from './teampfp/RDpfp_b&w.jpg';
+import tanjiroImage from './teampfp/tangiro_pfp_b&w.jpg';
 
 const TEAM_MEMBERS = [
   {
