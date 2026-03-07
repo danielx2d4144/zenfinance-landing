@@ -2,13 +2,7 @@
   "rewrites": [
     {
       "source": "/:path*",
-      "destination": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "app.zenfinance.online"
-        }
-      ]
+      "destination": "/index.html"
     }
   ],
   "redirects": [
