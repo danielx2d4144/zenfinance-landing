@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
           <h4 className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mono-font mb-6 md:mb-8">Quick Links</h4>
           <ul className="space-y-4">
             <li><Link to="/" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Home</Link></li>
-            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">LAUNCH APP</a></li>
+            <li><Link to="/beta" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">LAUNCH APP</Link></li>
             <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Help Center</a></li>
           </ul>
         </div>

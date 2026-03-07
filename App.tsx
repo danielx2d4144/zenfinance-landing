@@ -13,6 +13,7 @@ import { WalletProvider } from './components/WalletProvider';
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiePolicy from './components/legal/CookiePolicy';
 import TermsOfService from './components/legal/TermsOfService';
+import BetaRegistration from './components/BetaRegistration';
 
 const MainContent: React.FC = () => (
   <>
@@ -65,6 +66,7 @@ const App: React.FC = () => {
           <main>
             <Routes>
               <Route path="/" element={<MainContent />} />
+              <Route path="/beta" element={<BetaRegistration />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/cookies" element={<CookiePolicy />} />
               <Route path="/terms" element={<TermsOfService />} />

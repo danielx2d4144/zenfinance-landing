@@ -4,7 +4,7 @@ import { NavItem } from './types';
 
 export const NAV_ITEMS: NavItem[] = [
   { label: 'Our Markets', href: '/#markets' },
-  { label: 'Testnet', href: '#' },
+  { label: 'Testnet', href: 'http://testnet.zenfinance.online/' },
   { label: 'Docs', href: '#' },
   { label: 'Reviews', href: '#' },
   { label: 'Team', href: '/#team' },

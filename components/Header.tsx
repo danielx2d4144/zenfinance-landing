@@ -5,11 +5,9 @@ import { NAV_ITEMS } from '../constants';
 import Button from './Button';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useWallet } from './WalletProvider';
 
 const Header: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const { account, connectWallet, formatAddress } = useWallet();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -54,9 +52,11 @@ const Header: React.FC = () => {
 
       {/* Action Section - Desktop */}
       <div className="hidden md:flex w-1/4 items-center justify-end pl-8 pr-4">
-        <Button variant="primary" onClick={connectWallet}>
-          {account ? formatAddress(account) : 'LAUNCH APP'}
-        </Button>
+        <Link to="/beta">
+          <Button variant="primary">
+            LAUNCH APP
+          </Button>
+        </Link>
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -94,9 +94,11 @@ const Header: React.FC = () => {
               ))}
               <div className="h-px bg-white/10 my-2"></div>
               <div className="flex flex-col gap-6">
-                <Button variant="primary" className="w-full" onClick={connectWallet}>
-                  {account ? formatAddress(account) : 'LAUNCH APP'}
-                </Button>
+                <Link to="/beta" className="w-full">
+                  <Button variant="primary" className="w-full">
+                    LAUNCH APP
+                  </Button>
+                </Link>
               </div>
             </nav>
           </motion.div>
