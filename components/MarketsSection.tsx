@@ -6,7 +6,7 @@ const MARKETS = [
   {
     name: 'USDT',
     symbol: 'USDT0',
-    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/usdt.png',
+    logo: 'https://cryptologos.cc/logos/tether-usdt-logo.png',
     apy: '4.25%',
     tvl: '$12.4M',
     color: '#26A17B'
@@ -14,7 +14,7 @@ const MARKETS = [
   {
     name: 'Zen Bitcoin',
     symbol: 'zBTC',
-    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/btc.png',
+    logo: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png',
     apy: '1.80%',
     tvl: '$45.2M',
     color: '#F7931A'
@@ -22,7 +22,7 @@ const MARKETS = [
   {
     name: 'Ethereum',
     symbol: 'ETH',
-    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/eth.png',
+    logo: 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
     apy: '2.15%',
     tvl: '$89.1M',
     color: '#627EEA'
