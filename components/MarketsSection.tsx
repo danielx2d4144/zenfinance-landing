@@ -6,7 +6,7 @@ const MARKETS = [
   {
     name: 'USDT',
     symbol: 'USDT0',
-    logo: 'https://cryptologos.cc/logos/tether-usdt-logo.png',
+    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/usdt.png',
     apy: '4.25%',
     tvl: '$12.4M',
     color: '#26A17B'
@@ -14,7 +14,7 @@ const MARKETS = [
   {
     name: 'Zen Bitcoin',
     symbol: 'zBTC',
-    logo: 'https://cryptologos.cc/logos/bitcoin-btc-logo.png',
+    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/btc.png',
     apy: '1.80%',
     tvl: '$45.2M',
     color: '#F7931A'
@@ -22,7 +22,7 @@ const MARKETS = [
   {
     name: 'Ethereum',
     symbol: 'ETH',
-    logo: 'https://cryptologos.cc/logos/ethereum-eth-logo.png',
+    logo: 'https://raw.githubusercontent.com/spothq/cryptocurrency-icons/master/128/color/eth.png',
     apy: '2.15%',
     tvl: '$89.1M',
     color: '#627EEA'
@@ -118,8 +118,7 @@ const MarketsSection: React.FC = () => {
             {/* Action */}
             <div className="col-span-1 md:col-span-2 p-6 md:p-8 flex items-center justify-center">
               <button 
-                onClick={() => window.open('https://app.zenfinance.online/', '_blank')}
-                className="w-full md:w-auto px-8 py-3 bg-[#35CB87] text-black text-[11px] font-black uppercase tracking-[0.2em] mono-font hover:bg-white transition-colors relative overflow-hidden cursor-pointer"
+                className="w-full md:w-auto px-8 py-3 bg-[#35CB87] text-black text-[11px] font-black uppercase tracking-[0.2em] mono-font hover:bg-white transition-colors relative overflow-hidden"
                 style={{ clipPath: 'polygon(8px 0, 100% 0, 100% calc(100% - 8px), calc(100% - 8px) 100%, 0 100%, 0 8px)' }}
               >
                 Supply

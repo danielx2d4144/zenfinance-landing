@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
           <div className="absolute bottom-0 right-0 w-2 h-2 bg-[#35CB87] translate-x-1/2 translate-y-1/2 z-20"></div>
           <h4 className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mono-font mb-6 md:mb-8">Ecosystem</h4>
           <ul className="space-y-4">
-            <li><a href="https://www.zenchain.io/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Zen chain</a></li>
+            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Zen chain</a></li>
             <li><a href="https://www.thrive.xyz/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Thrive Protocal</a></li>
           </ul>
         </div>
@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
           <h4 className="text-[10px] font-bold text-white/40 uppercase tracking-[0.2em] mono-font mb-6 md:mb-8">Quick Links</h4>
           <ul className="space-y-4">
             <li><Link to="/" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Home</Link></li>
-            <li><a href="https://app.zenfinance.online/" target="_blank" rel="noopener noreferrer" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">LAUNCH APP</a></li>
+            <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">LAUNCH APP</a></li>
             <li><a href="#" className="text-sm font-medium mono-font text-white hover:text-[#35CB87] transition-colors">Help Center</a></li>
           </ul>
         </div>
