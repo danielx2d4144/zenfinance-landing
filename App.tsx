@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import BeyondHero from './components/BeyondHero';
@@ -13,7 +14,6 @@ import { WalletProvider } from './components/WalletProvider';
 import PrivacyPolicy from './components/legal/PrivacyPolicy';
 import CookiePolicy from './components/legal/CookiePolicy';
 import TermsOfService from './components/legal/TermsOfService';
-import BetaRegistration from './components/BetaRegistration';
 
 const MainContent: React.FC = () => (
   <>
@@ -66,7 +66,6 @@ const App: React.FC = () => {
           <main>
             <Routes>
               <Route path="/" element={<MainContent />} />
-              <Route path="/beta" element={<BetaRegistration />} />
               <Route path="/privacy" element={<PrivacyPolicy />} />
               <Route path="/cookies" element={<CookiePolicy />} />
               <Route path="/terms" element={<TermsOfService />} />
@@ -76,6 +75,7 @@ const App: React.FC = () => {
             <Footer />
           </main>
         </div>
+        <SpeedInsights />
       </div>
     </WalletProvider>
   );
