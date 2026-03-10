@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import BeyondHero from './components/BeyondHero';
@@ -74,6 +75,7 @@ const App: React.FC = () => {
             <Footer />
           </main>
         </div>
+        <SpeedInsights />
       </div>
     </WalletProvider>
   );
