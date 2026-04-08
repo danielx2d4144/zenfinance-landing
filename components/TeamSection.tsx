@@ -1,34 +1,30 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Send } from 'lucide-react';
-import danielJosiahImage from './teampfp/bio pic.jpg';
-import mofiSageImage from './teampfp/mofi bio pic.jpg';
-import rdDanielImage from './teampfp/RDpfp_b&w.jpg';
-import tanjiroImage from './teampfp/tangiro_pfp_b&w.jpg';
 
 const TEAM_MEMBERS = [
   {
     name: 'Daniel Josiah',
     role: 'COFOUNDER',
-    image: danielJosiahImage,
+    image: 'https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
     bio: 'Mechatronics Engineer and dedicated blockchain developer focused on building in the Web3 space. Leverages engineering discipline and systems-level thinking to design secure smart contracts and scalable decentralized applications. Actively engaged in the Web3 ecosystem, contributing to and exploring emerging technologies that drive the future of decentralized finance and trustless infrastructure.'
   },
   {
     name: 'R.D Daniel',
     role: 'COFOUNDER',
-    image: rdDanielImage,
+    image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
     bio: 'Strategic investment professional with a focus on early-stage Web3 ecosystems. Daniel has a track record of identifying high-potential projects and providing strategic guidance for long-term growth.'
   },
   {
     name: 'Tanjiro',
     role: 'Community manager & SMM',
-    image: tanjiroImage,
+    image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
     bio: 'Growing early-stage Web3 projects with strategy and heart. Running AMAs, contests, and campaigns that turn lurkers into active, loyal community members. Passionate about DeFi, NFTs, and building real engagement.'
   },
   {
     name: 'Mofi Sage',
     role: 'DESIGN ARCHITECT',
-    image: mofiSageImage,
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=300&h=300&auto=format&fit=crop&grayscale=true',
     bio: 'Frontend Developer | UI/UX Designer | Student. 5+ years building clean, responsive interfaces with React, modern CSS, and Figma. Focused on creating intuitive user experiences that actually work. Currently juggling React, Figma, late-night commits'
   },
 ];

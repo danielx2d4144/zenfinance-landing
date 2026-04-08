@@ -1,7 +1,9 @@
 import React from 'react';
+import { useWallet } from './WalletProvider';
 import ZenFinanceLogo from './ZenFinanceLogo';
 
 const BeyondHero: React.FC = () => {
+  const { account, connectWallet, formatAddress } = useWallet();
 
   return (
     <section className="bg-[#111111] w-full min-h-[700px] border-b border-white/10 relative overflow-hidden font-sans">
@@ -76,17 +78,15 @@ const BeyondHero: React.FC = () => {
           </div>
 
           <div className="flex justify-center">
-            <a 
-              href="https://app.zenfinance.online/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-[#35CB87] text-black px-10 py-3 font-bold uppercase text-[11px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#35CB87]/20 overflow-visible rounded-md inline-block text-center"
+            <button 
+              onClick={connectWallet}
+              className="bg-[#35CB87] text-black px-10 py-3 font-bold uppercase text-[11px] tracking-widest hover:brightness-110 transition-all shadow-xl shadow-[#35CB87]/20 overflow-visible rounded-md"
               style={{
                 clipPath: 'polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px)'
               }}
             >
-              LAUNCH APP
-            </a>
+              {account ? formatAddress(account) : 'LAUNCH APP'}
+            </button>
           </div>
         </div>
 
