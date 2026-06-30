@@ -7,7 +7,7 @@
     "dev": "vite",
     "build:client": "vite build --outDir dist/client",
     "build:server": "vite build --outDir dist/server --ssr src/entry-server.tsx",
-    "build": "npm run build:client && npm run build:server",
+    "build": "npm run build:client && npm run build:server && mkdir -p assets && cp -r dist/client/assets/* assets/",
     "preview": "vite preview",
     "lint": "tsc --noEmit"
   },
