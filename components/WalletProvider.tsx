@@ -12,7 +12,7 @@ export const WalletProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   const [account, setAccount] = useState<string | null>(null);
 
   const connectWallet = async () => {
-    if (typeof window.ethereum !== 'undefined') {
+    if (typeof window !== 'undefined' && typeof window.ethereum !== 'undefined') {
       try {
         // Request account access
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
