@@ -40,16 +40,17 @@ const MainContent: React.FC = () => (
   </>
 );
 
-const App: React.FC = () => {
+const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
-
-  // Scroll to top on route change
   React.useEffect(() => {
     if (typeof window !== 'undefined') {
       window.scrollTo(0, 0);
     }
   }, [pathname]);
+  return null;
+};
 
+const App: React.FC = () => {
   return (
     <WalletProvider>
       <div className="min-h-screen bg-black selection:bg-[#35CB87] selection:text-black relative">
@@ -63,6 +64,7 @@ const App: React.FC = () => {
 
         {/* Container to maintain alignment with the reference image's grid lines */}
         <div className="max-w-[1920px] mx-auto bg-black/50 min-h-screen border-x border-white/10 bg-grid-squares relative z-10">
+          <ScrollToTop />
           <Header />
           
           <main>
