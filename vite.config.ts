@@ -19,9 +19,6 @@ export default defineConfig(({ mode }) => {
           '@': path.resolve(__dirname, '.'),
         }
       },
-      ssr: {
-        noExternal: ['react-router-dom'],
-        external: ['react-router-dom/server']
-      }
+
     };
 });
