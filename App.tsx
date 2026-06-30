@@ -41,13 +41,7 @@ const MainContent: React.FC = () => (
 );
 
 const App: React.FC = () => {
-  let pathname = "/";
-  try {
-    const location = useLocation();
-    pathname = location.pathname;
-  } catch (e) {
-    // Fallback for SSR where Router might not be present
-  }
+  const { pathname } = useLocation();
 
   // Scroll to top on route change
   React.useEffect(() => {
