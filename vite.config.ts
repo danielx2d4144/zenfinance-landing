@@ -18,6 +18,10 @@ export default defineConfig(({ mode }) => {
         alias: {
           '@': path.resolve(__dirname, '.'),
         }
+      },
+      ssr: {
+        noExternal: ['react-router-dom'],
+        external: ['react-router-dom/server']
       }
     };
 });
